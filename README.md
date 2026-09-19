@@ -102,16 +102,10 @@ Useful search phrases for the project include:
 
 No framework or build step is required.
 
-## ▶️ Run locally
+## 🔗 Links
 
-Clone the repository:
-
-```bash
-git clone https://github.com/SkyDevLab/MdrChor.git
-cd MdrChor
-```
-
-Open `index.html` in a browser.
+- 🌐 **Live Website:** https://skydevlab.github.io/MdrChor/
+- 💻 **GitHub Repository:** https://github.com/SkyDevLab/MdrChor
 
 ## 🌐 Deploy with GitHub Pages
 
