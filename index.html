@@ -49,16 +49,17 @@ nav{display:flex;align-items:center;gap:12px}nav a{text-decoration:none;color:va
 @media(max-width:1100px){header{flex-wrap:wrap}.main{grid-template-columns:1fr}.control-panel{min-height:auto}.saving-card{grid-template-columns:1fr}.saving-stats{justify-content:stretch}.stat{flex:1}.hand-text{display:none}nav{width:100%;justify-content:center}}
 @media(max-width:650px){
   body{overflow-x:hidden}
-  header{padding:14px 10px 8px;gap:8px}
-  .brand{gap:8px;align-items:center}
-  .mascot{width:70px;height:70px;transform:scale(.62);transform-origin:left center;margin-right:-18px}
-  .brand-text h1{font-size:38px;letter-spacing:-1.5px}
+  header{min-height:auto;padding:14px 10px 10px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:7px}
+  .brand{width:100%;justify-content:center;gap:0;align-items:center}
+  .mascot{display:none}
+  .brand-text{text-align:center}
+  .brand-text h1{font-size:38px;line-height:1;letter-spacing:-1.5px}
   .brand-text p{font-size:12px;line-height:1.15;margin-top:4px}
   .hand-text{display:none}
-  nav{width:100%;justify-content:flex-start;overflow-x:auto;white-space:nowrap;padding:4px 2px 8px;scrollbar-width:none}
+  nav{width:100%;justify-content:center;overflow-x:auto;white-space:nowrap;padding:2px 0 5px;gap:4px;scrollbar-width:none}
   nav::-webkit-scrollbar{display:none}
-  nav a{padding:8px 12px;font-size:13px;flex:0 0 auto}
-  .main{display:block;padding:8px 10px 22px}
+  nav a{padding:7px 11px;font-size:12px;flex:0 0 auto;border-radius:12px}
+  .main{display:block;width:100%;padding:8px 8px 22px}
   .control-panel{padding:18px;border-radius:20px;margin-bottom:12px}
   .control-panel h2{font-size:23px;margin-bottom:9px}
   .amount-wrapper{height:58px;margin-bottom:18px;border-radius:13px}
@@ -116,8 +117,7 @@ nav{display:flex;align-items:center;gap:12px}nav a{text-decoration:none;color:va
 @media(max-width:380px){
   .brand-text h1{font-size:34px}
   .brand-text p{font-size:11px}
-  .mascot{transform:scale(.52);margin-right:-28px}
-  nav a{padding:7px 10px;font-size:12px}
+  nav a{padding:6px 9px;font-size:11px}
   .control-panel{padding:15px}
   .saving-value{font-size:35px}
   .stat small{font-size:8px}
