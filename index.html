@@ -3,8 +3,31 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MDRChor — Split Smarter</title>
-<meta name="description" content="MDRChor helps you calculate MDR charges, payment splits and potential savings.">
+<title>MDR Calculator India — Payment Split & MDR Charge Calculator | MDRChor</title>
+<meta name="description" content="Free MDR calculator for India. Calculate payment MDR charges, compare automatic and custom payment splits, and estimate potential savings on transactions.">
+<meta name="keywords" content="MDR calculator, MDR calculator India, merchant discount rate calculator, payment MDR calculator, payment split calculator, MDR charge calculator, 0.4 percent MDR calculator, payment fee calculator India">
+<meta name="author" content="SkyDevLab">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://skydevlab.github.io/MdrChor/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="MDR Calculator India — Split Smarter with MDRChor">
+<meta property="og:description" content="Calculate MDR charges, compare payment splits and see potential savings with the free MDRChor calculator.">
+<meta property="og:url" content="https://skydevlab.github.io/MdrChor/">
+<meta property="og:site_name" content="MDRChor">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="MDR Calculator India | MDRChor">
+<meta name="twitter:description" content="Calculate MDR charges and compare payment splitting options with MDRChor.">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"MDRChor","url":"https://skydevlab.github.io/MdrChor/","applicationCategory":"FinanceApplication","operatingSystem":"Any","description":"A free MDR and payment split calculator for comparing transaction charges and potential savings.","offers":{"@type":"Offer","price":"0","priceCurrency":"INR"},"author":{"@type":"Organization","name":"SkyDevLab"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"What is MDR?","acceptedAnswer":{"@type":"Answer","text":"MDR stands for Merchant Discount Rate. It is a fee charged on eligible payment transactions by a payment provider or acquiring arrangement."}},
+{"@type":"Question","name":"How does MDRChor calculate MDR?","acceptedAnswer":{"@type":"Answer","text":"MDRChor uses the example rules shown in the calculator: transactions up to ₹2,000 have no charge, amounts above ₹2,000 up to ₹75,000 use a 0.4% calculation, and amounts above ₹75,000 use a ₹300 fixed charge."}},
+{"@type":"Question","name":"How does the payment split calculator work?","acceptedAnswer":{"@type":"Answer","text":"Enter a total amount and choose Automatic or Custom. Automatic mode creates transactions around the configured ₹2,000 free limit. Custom mode lets you choose the number of splits and calculates the charge for each resulting transaction."}},
+{"@type":"Question","name":"How much can I save by splitting a ₹10,000 payment?","acceptedAnswer":{"@type":"Answer","text":"Under the calculator's example 0.4% rule, one ₹10,000 transaction has a ₹40 MDR charge. Five ₹2,000 transactions have ₹0 MDR under the configured rules, so the displayed difference is ₹40."}}
+]}
+</script>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Comic+Neue:wght@400;700&display=swap');
 :root{--yellow:#ffd84d;--orange:#ff9f00;--green:#16a765;--blue-light:#eef8ff;--blue-border:#a9dcff;--dark:#172033;--gray:#697386}
@@ -22,6 +45,13 @@ nav{display:flex;align-items:center;gap:12px}nav a{text-decoration:none;color:va
 .split-card{background:#fff;border-radius:27px;border:1px solid #e7e9eb;padding:22px;box-shadow:0 10px 35px rgba(0,0,0,.05)}.split-title{display:flex;align-items:center;justify-content:space-between;margin-bottom:15px}.split-title h2{font-size:26px}.transaction-count{color:var(--gray);font-weight:500;font-size:18px}.table-wrapper{overflow-x:auto}table{width:100%;border-collapse:separate;border-spacing:0;overflow:hidden;border:1px solid #e3e7eb;border-radius:16px;min-width:650px}thead{background:#f6f8f9}th{text-align:left;padding:13px 17px;color:#687385;font-size:14px;font-weight:600}td{padding:12px 17px;border-top:1px solid #e8ebee;font-size:16px;font-weight:600}tbody tr:hover{background:#fbfdfc}.number{width:36px;height:36px;display:inline-grid;place-items:center;border-radius:50%;background:#fff1c7;color:#222;font-weight:800}.free,.paid{display:inline-flex;align-items:center;gap:8px;padding:6px 15px;border-radius:9px;font-weight:800}.free{background:#e5f8ec;color:#0c8e51}.paid{background:#fff3d2;color:#b87900}.tip{margin-top:20px;padding:17px 20px;background:var(--blue-light);border:1px solid var(--blue-border);border-radius:17px;display:flex;align-items:center;justify-content:space-between;gap:20px}.tip-content{display:flex;align-items:center;gap:12px}.tip-icon{font-size:28px}.tip strong{display:block;font-size:17px}.tip p{color:#53657a;font-size:14px}.tip-joke{font-family:"Comic Neue",cursive;font-size:21px;font-weight:700;transform:rotate(-3deg);white-space:nowrap}.empty{text-align:center;padding:35px!important;color:var(--gray);font-weight:500}footer{max-width:1450px;margin:auto;border-top:1px solid #ece9de;padding:20px 35px 30px;display:flex;justify-content:space-between;gap:20px;color:#6d7480;font-size:14px}footer strong{color:var(--orange)}
 @media(max-width:1100px){header{flex-wrap:wrap}.main{grid-template-columns:1fr}.control-panel{min-height:auto}.saving-card{grid-template-columns:1fr}.saving-stats{justify-content:stretch}.stat{flex:1}.hand-text{display:none}nav{width:100%;justify-content:center}}
 @media(max-width:650px){header{padding:20px 16px;justify-content:center}.brand{width:100%;justify-content:center}.mascot{transform:scale(.75);margin-right:-12px}.brand-text h1{font-size:39px}.brand-text p{font-size:14px}nav{gap:2px}nav a{padding:8px 10px;font-size:13px}.main{padding:10px 12px 25px}.control-panel{padding:22px;border-radius:22px}.saving-card{padding:20px}.saving-main{align-items:flex-start}.party{font-size:35px}.saving-value{font-size:44px}.saving-sub{font-size:16px}.saving-stats{display:grid;grid-template-columns:repeat(3,1fr)}.stat{min-width:0;padding:10px}.stat strong{font-size:15px}.stat small{font-size:10px}.split-card{padding:15px;border-radius:20px}.split-title h2{font-size:21px}.transaction-count{font-size:14px}.tip{align-items:flex-start;flex-direction:column}.tip-joke{white-space:normal}footer{padding:15px;flex-direction:column;text-align:center}}
+</style>
+<style>
+.seo-content{max-width:1450px;margin:0 auto;padding:15px 35px 45px;display:grid;grid-template-columns:1.15fr .85fr;gap:25px}
+.seo-card{background:#fff;border:1px solid #e7e9eb;border-radius:24px;padding:28px;box-shadow:0 8px 25px rgba(0,0,0,.04)}
+.seo-card h2{font-size:28px;margin-bottom:10px}.seo-card h3{font-size:21px;margin:20px 0 6px}.seo-card p{color:#596474;line-height:1.65}.seo-card ul{padding-left:22px;color:#596474;line-height:1.7}
+.faq-item{border-top:1px solid #e7e9eb;padding:14px 0}.faq-item:first-child{border-top:0}.faq-item summary{cursor:pointer;font-weight:700;font-size:17px}.faq-item p{margin-top:8px;font-size:14px}
+@media(max-width:900px){.seo-content{grid-template-columns:1fr;padding:10px 12px 35px}}
 </style>
 </head>
 <body>
@@ -73,6 +103,32 @@ nav{display:flex;align-items:center;gap:12px}nav a{text-decoration:none;color:va
   </section>
 </main>
 
+
+<section id="how-it-works" class="seo-content" aria-label="MDR calculator information">
+  <article class="seo-card">
+    <h2>Free MDR Calculator & Payment Split Calculator</h2>
+    <p>MDRChor helps you calculate merchant discount rate (MDR) charges on payment transactions and compare them with a split-payment approach. Enter an amount to see the original MDR, individual transaction charges, total charge after splitting, and the displayed potential savings.</p>
+    <h3>How does MDR calculation work?</h3>
+    <p>This calculator uses the example rules displayed above: transactions up to ₹2,000 have no charge, amounts above ₹2,000 through ₹75,000 use a 0.4% calculation, and amounts above ₹75,000 use a ₹300 fixed charge.</p>
+    <h3>Example: ₹10,000 payment</h3>
+    <p>At 0.4%, a single ₹10,000 transaction produces a ₹40 example MDR charge. With Automatic mode, MDRChor can show five ₹2,000 transactions, each with no charge under the configured rules. Custom mode lets you choose another split count, such as four transactions: ₹2,000 + ₹2,000 + ₹2,000 + ₹4,000. In that example, the 0.4% calculation applies to the ₹4,000 transaction.</p>
+    <h3>Why use a payment split calculator?</h3>
+    <ul>
+      <li>Compare a single payment with multiple transaction amounts.</li>
+      <li>See exactly where an MDR charge is applied.</li>
+      <li>Test custom split counts before making a calculation.</li>
+      <li>Understand the difference between original MDR and split MDR.</li>
+    </ul>
+  </article>
+  <article class="seo-card">
+    <h2>Frequently Asked Questions</h2>
+    <details class="faq-item"><summary>What is MDR?</summary><p>MDR stands for Merchant Discount Rate, a fee associated with eligible payment transactions. Actual rates and conditions depend on the payment provider and applicable agreement.</p></details>
+    <details class="faq-item"><summary>Is MDRChor a real payment processor?</summary><p>No. MDRChor is a browser-based calculator. It does not process, route, authorize, or settle payments.</p></details>
+    <details class="faq-item"><summary>Can I choose custom splits?</summary><p>Yes. Select Custom and enter a split count. The calculator keeps the input editable and calculates the resulting transaction amounts and charges.</p></details>
+    <details class="faq-item"><summary>Does splitting always remove MDR?</summary><p>No. MDRChor only applies the rules configured in the calculator. Actual provider fees, limits, taxes, minimum charges, and transaction policies can differ.</p></details>
+    <details class="faq-item"><summary>How much is 0.4% of ₹10,000?</summary><p>0.4% of ₹10,000 is ₹40.00.</p></details>
+  </article>
+</section>
 <footer id="about"><div><strong>MDRChor</strong> &nbsp; © 2026 &nbsp; | &nbsp; Split Smarter. Pay Less MDR.</div><div>A simple calculator for smarter payments.</div><div>❤️ Built for smart spenders.</div></footer>
 
 <script>
