@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0d2637"/><stop offset="1" stop-color="#142f45"/></linearGradient>
+  <linearGradient id="card" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#ffffff"/><stop offset="1" stop-color="#eefbf5"/></linearGradient>
+</defs>
+<rect width="1200" height="630" fill="url(#bg)"/>
+<circle cx="1080" cy="80" r="150" fill="#21e98b" opacity=".08"/>
+<circle cx="80" cy="580" r="180" fill="#ffd84d" opacity=".07"/>
+<text x="70" y="135" font-family="Arial,sans-serif" font-size="86" font-weight="900" fill="#fff">MDR<tspan fill="#20e98b">Chor</tspan></text>
+<text x="74" y="178" font-family="Arial,sans-serif" font-size="24" font-weight="700" fill="#b9cddd">MDR Calculator for Smarter Payments</text>
+
+<!-- ninja mascot -->
+<g transform="translate(565 45)">
+  <ellipse cx="95" cy="150" rx="105" ry="22" fill="#06131e" opacity=".5"/>
+  <path d="M35 125 Q25 45 95 22 Q165 45 155 125 Q130 155 95 158 Q60 155 35 125Z" fill="#171b22" stroke="#fff" stroke-width="4"/>
+  <path d="M44 73 Q95 45 146 73 L139 108 Q95 88 51 108Z" fill="#f7f7f7"/>
+  <circle cx="75" cy="78" r="8" fill="#111"/><circle cx="115" cy="78" r="8" fill="#111"/>
+  <path d="M55 45 Q95 5 135 45" fill="none" stroke="#20e98b" stroke-width="10" stroke-linecap="round"/>
+  <path d="M30 112 Q-15 125 -35 105" fill="none" stroke="#20e98b" stroke-width="9" stroke-linecap="round"/>
+  <path d="M150 110 Q200 128 218 104" fill="none" stroke="#20e98b" stroke-width="9" stroke-linecap="round"/>
+  <path d="M48 125 L10 165" stroke="#171b22" stroke-width="22" stroke-linecap="round"/>
+  <path d="M142 125 L182 165" stroke="#171b22" stroke-width="22" stroke-linecap="round"/>
+  <path d="M15 95 Q-35 80 -40 40" fill="none" stroke="#d7a22a" stroke-width="15" stroke-linecap="round"/>
+  <circle cx="-43" cy="34" r="20" fill="#d7a22a"/>
+  <text x="-52" y="42" font-family="Arial" font-size="20" font-weight="900" fill="#111">₹</text>
+</g>
+
+<text x="825" y="100" font-family="cursive" font-size="43" font-weight="700" fill="#fff">Split Smart.</text>
+<text x="825" y="150" font-family="cursive" font-size="43" font-weight="700" fill="#20e98b">Save More.</text>
+
+<g font-family="Arial,sans-serif" font-size="24" fill="#fff" font-weight="700">
+  <circle cx="855" cy="205" r="14" fill="#20e98b"/><text x="850" y="213" fill="#092238" font-size="18">✓</text><text x="885" y="213">Calculate MDR</text>
+  <circle cx="855" cy="250" r="14" fill="#20e98b"/><text x="850" y="258" fill="#092238" font-size="18">✓</text><text x="885" y="258">Compare Splits</text>
+  <circle cx="855" cy="295" r="14" fill="#20e98b"/><text x="850" y="303" fill="#092238" font-size="18">✓</text><text x="885" y="303">See Potential Savings</text>
+</g>
+
+<rect x="60" y="300" width="1080" height="205" rx="28" fill="url(#card)"/>
+<text x="110" y="345" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#66788b">TRANSACTION AMOUNT</text>
+<text x="110" y="420" font-family="Arial,sans-serif" font-size="64" font-weight="900" fill="#172033">₹10,000</text>
+<text x="110" y="456" font-family="Arial,sans-serif" font-size="18" fill="#66788b">Customer pays</text>
+
+<text x="480" y="345" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#66788b">MDR @ 0.4%</text>
+<text x="480" y="420" font-family="Arial,sans-serif" font-size="64" font-weight="900" fill="#172033">₹40</text>
+<text x="480" y="456" font-family="Arial,sans-serif" font-size="18" fill="#66788b">Example MDR charge</text>
+
+<text x="770" y="355" font-family="Arial,sans-serif" font-size="26" font-weight="800" fill="#138d58">SPLIT &amp; SAVE</text>
+<text x="770" y="420" font-family="Arial,sans-serif" font-size="58" font-weight="900" fill="#16a765">₹↓</text>
+<text x="850" y="420" font-family="Arial,sans-serif" font-size="25" font-weight="800" fill="#138d58">Lower Charges</text>
+<text x="850" y="453" font-family="Arial,sans-serif" font-size="25" font-weight="800" fill="#138d58">Higher Savings</text>
+
+<g font-family="Arial,sans-serif" font-size="20" font-weight="700">
+ <rect x="60" y="535" width="250" height="55" rx="18" fill="#e9f4ff"/><text x="88" y="570" fill="#173b5d">🧮 Custom Splits</text>
+ <rect x="330" y="535" width="250" height="55" rx="18" fill="#e9fff3"/><text x="358" y="570" fill="#147a50">⚡ Instant Results</text>
+ <rect x="600" y="535" width="250" height="55" rx="18" fill="#f1edff"/><text x="628" y="570" fill="#5b4a9c">✓ Clear Calculations</text>
+ <rect x="870" y="535" width="270" height="55" rx="18" fill="#fff6df"/><text x="898" y="570" fill="#9a6900">🇮🇳 For Indian Payments</text>
+</g>
+</svg>
