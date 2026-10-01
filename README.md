@@ -133,3 +133,10 @@ Add the license you prefer before publishing the project for wider reuse.
 Made with ❤️ by **SkyDevLab**.
 
 **MDRChor — Chori nahi, Smart Split! 😎**
+
+
+## 👤 Author & Project Identity
+
+**MDRChor** is created and maintained by **Surya Pratap Singh (SkyDevLab)**.
+
+GitHub: https://github.com/SkyDevLab
